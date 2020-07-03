@@ -4,10 +4,11 @@ import re
 
 # read the file
 with open('test.txt', 'r') as myfile:
-  text = myfile.read()
+  mystring = myfile.read()
+  text = mystring.lower()
 
 # removing ponctuation
-x = re.split(' |\n|:|"|;|\.|\'|!|\?|,|>|<', text)
+x = re.split(' |\n|:|"|;|\.|\'|!|\?|,|>|<|[0-9]|\(|\)', text)
 
 # create empty list
 newstr = []
