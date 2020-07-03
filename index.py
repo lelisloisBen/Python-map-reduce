@@ -1,0 +1,1 @@
+## read a file and push every word to a list
